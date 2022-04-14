@@ -1,0 +1,32 @@
+.sideBar-container {
+  background: #202c39;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  flex-direction: column;
+  font-size: 20px;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  color: #f2d492;
+}
+.pic-of-logo {
+  fill: white;
+  color: white;
+}
+.list-container {
+  color: #f29559;
+}
+.list-container > li {
+  list-style: none;
+  margin-top: 20px;
+}
