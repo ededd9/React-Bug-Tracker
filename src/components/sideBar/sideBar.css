@@ -9,7 +9,7 @@
   justify-content: center;
   position: fixed;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 25px;
 }
 .logo-container {
   display: flex;
@@ -18,10 +18,10 @@
   position: fixed;
   top: 0;
   color: #f2d492;
+  font-size: 25px;
 }
-.pic-of-logo {
-  fill: white;
-  color: white;
+.logo-icon {
+  margin-left: 10px;
 }
 .list-container {
   color: #f29559;
@@ -29,4 +29,11 @@
 .list-container > li {
   list-style: none;
   margin-top: 20px;
+  border-bottom: 1px solid white;
+}
+.list-container > li > i {
+  margin: 10px;
+}
+.list-icons {
+  cursor: pointer;
 }

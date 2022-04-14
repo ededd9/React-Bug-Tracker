@@ -4,18 +4,27 @@ function sideBar() {
   return (
     <div className="sideBar-container">
       <div className="logo-container">
-        <img
-          className="pic-of-logo"
-          alt="svgImg"
-          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMTYiIGhlaWdodD0iMTYiCnZpZXdCb3g9IjAgMCAxNiAxNiIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48cGF0aCBkPSJNIDYuOTI5Njg4IDEgQyA2LjkyOTY4OCAxIDYuMTk1MzEzIDIuMDAzOTA2IDYuNDE3OTY5IDMuNTc4MTI1IEMgNi41NjY0MDYgNC42MTcxODggNy4zMzIwMzEgNS4yNzM0MzggNy45MDIzNDQgNS42NDA2MjUgQyA3LjkxNDA2MyA2LjA4MjAzMSA3LjkyMTg3NSA2LjUyMzQzOCA3Ljg4MjgxMyA2Ljk3NjU2MyBDIDcuNTU0Njg4IDYuMzIwMzEzIDYuOTg0Mzc1IDUuNDg4MjgxIDYuMDI3MzQ0IDUuMTUyMzQ0IEMgNC45MTQwNjMgNC43NjE3MTkgMy41IDUuMjQyMTg4IDMuNSA1LjI0MjE4OCBDIDMuNjkxNDA2IDYuNTkzNzUgNC42MDE1NjMgNy42NDg0MzggNi4wODU5MzggNy45MDYyNSBDIDYuODQzNzUgOC4wMzkwNjMgNy40MDIzNDQgOC4wMDM5MDYgNy43NjU2MjUgNy45NDUzMTMgQyA3LjYzNjcxOSA4Ljc0MjE4OCA3LjQyOTY4OCA5LjUxOTUzMSA3LjEzMjgxMyAxMC4yMzgyODEgQyA2LjgwMDc4MSA5LjU0Njg3NSA2LjAzOTA2MyA4LjU4MjAzMSA0LjMyODEyNSA4LjM5MDYyNSBDIDMuMTMyODEzIDguMjYxNzE5IDIgOC45NzI2NTYgMiA4Ljk3MjY1NiBDIDIgOC45NzI2NTYgMi43MTg3NSAxMS41IDUuMDYyNSAxMS41IEMgNS43MzQzNzUgMTEuNSA2LjIzODI4MSAxMS4zOTA2MjUgNi42MjEwOTQgMTEuMjY5NTMxIEMgNS42NjAxNTYgMTIuODk4NDM4IDQuMjA3MDMxIDE0IDIgMTQgTCAyIDE1IEMgNC42NDA2MjUgMTUgNi41MTU2MjUgMTMuNTM5MDYzIDcuNjAxNTYzIDExLjU4OTg0NCBDIDcuNjQ0NTMxIDExLjUwNzgxMyA3LjY3OTY4OCAxMS40MjE4NzUgNy43MjI2NTYgMTEuMzQzNzUgQyA4LjA4MjAzMSAxMS41NzAzMTMgOC45Mjk2ODggMTIgMTAuMzA0Njg4IDEyIEMgMTIuMTc1NzgxIDEyIDEzIDkuNzk2ODc1IDEzIDkuNzk2ODc1IEMgMTMgOS43OTY4NzUgMTIuMDY2NDA2IDkgMTAuNjM2NzE5IDkgQyA5LjUzOTA2MyA5IDguNzA3MDMxIDkuNzE4NzUgOC4xNjc5NjkgMTAuMzQzNzUgQyA4LjQ1NzAzMSA5LjU3ODEyNSA4LjY2MDE1NiA4Ljc3NzM0NCA4Ljc4MTI1IDcuOTYwOTM4IEMgOS4yOTY4NzUgOC4wMzEyNSAxMC43NjU2MjUgOC4xMzI4MTMgMTEuNjgzNTk0IDcuMjAzMTI1IEMgMTIuNzk2ODc1IDYuMDc0MjE5IDEyLjYxMzI4MSA1LjAzOTA2MyAxMi42MTMyODEgNS4wMzkwNjMgQyAxMi42MTMyODEgNS4wMzkwNjMgMTAuNzUgNC43NjE3MTkgOS43MzA0NjkgNS42OTUzMTMgQyA5LjM0NzY1NiA2LjA0Mjk2OSA5LjA4MjAzMSA2LjUyMzQzOCA4Ljg5MDYyNSA2Ljk1MzEyNSBDIDguOTMzNTk0IDYuMzkwNjI1IDguOTM3NSA1LjgzMjAzMSA4LjkwNjI1IDUuMjg5MDYzIEMgOS4wODIwMzEgNC44ODI4MTMgOS4yNSA0LjMzNTkzOCA5LjI1IDMuNjcxODc1IEMgOS4yNSAxLjc1MzkwNiA2LjkyOTY4OCAxIDYuOTI5Njg4IDEgWiI+PC9wYXRoPjwvc3ZnPg=="
-        />
         <div className="name-of-logo">Bug Tracker</div>
+        <i className="logo-icon fa-solid fa-layer-group"></i>
       </div>
       <ul className="list-container">
-        <li>t1</li>
-        <li>t2</li>
-        <li>t3</li>
-        <li>t4</li>
+        <li>
+          <i className="list-icons fa-solid fa-house"></i>
+          Homepage
+        </li>
+        <li>
+          <i className="list-icons fa-solid fa-chart-simple"></i>Statistics
+        </li>
+        <li>
+          <i className="list-icons fa-solid fa-plus"></i>Add Ticket
+        </li>
+        <li>
+          <i className="list-icons fa-solid fa-user"></i>Profile
+        </li>
+        <li>
+          <i className="list-icons fa-solid fa-arrow-right-from-bracket"></i>
+          Logout
+        </li>
       </ul>
     </div>
   );
