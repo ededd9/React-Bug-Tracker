@@ -1,0 +1,9 @@
+.addTicketContainer {
+  display: flex;
+  background: #202c39;
+  height: 700px;
+  width: 700px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
