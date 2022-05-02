@@ -1,15 +1,18 @@
 import React from "react";
 import "./mainPage.css";
 import SideBar from "../../components/sideBar/sideBar";
-function mainPage() {
+import ViewTickets from "../../components/viewTickets/viewTickets";
+function MainPage() {
   return (
     <>
-      <div className="mainpage-container">
-        testing
+      <div className="f1 col">
         <SideBar />
+      </div>
+      <div className="f2 col">
+        <ViewTickets />
       </div>
     </>
   );
 }
 
-export default mainPage;
+export default MainPage;

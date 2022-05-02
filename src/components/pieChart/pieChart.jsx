@@ -34,15 +34,15 @@ function PieChart(props) {
     arc
       .append("path")
       .attr("d", arcGenerator)
-      .style("fill", (_, i) => d3.scaleLinear(i))
-      .style("stroke", "#ffffff")
-      .style("stroke-width", 0);
+      .attr("fill", "#283845")
+      .style("stroke", "black")
+      .style("stroke-width", 4);
     arc
       .append("text")
       .attr("text-anchor", "middle")
       .attr("alignment-baseline", "middle")
       .text((d) => [d.data.label, d.data.value])
-      .style("fill", "#ffffff")
+      .style("fill", "#f2d492")
       .attr("transform", (d) => {
         const [x, y] = arcGenerator.centroid(d);
         return `translate(${x}, ${y})`;
