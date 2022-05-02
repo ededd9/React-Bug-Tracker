@@ -3,7 +3,7 @@
   left: 0;
   top: 0;
   height: 100%;
-  width: 15%;
+  width: 15vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,9 +16,9 @@
   flex-direction: row;
   align-items: center;
   position: fixed;
-  top: 0;
+  top: 20px;
   color: #f2d492;
-  font-size: 25px;
+  font-size: 35px;
 }
 .logo-icon {
   margin-left: 10px;
@@ -36,4 +36,8 @@
 }
 .list-icons {
   cursor: pointer;
+}
+.link {
+  text-decoration: none;
+  color: #f29559;
 }
