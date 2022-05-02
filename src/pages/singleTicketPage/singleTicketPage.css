@@ -1,0 +1,15 @@
+.infoContainer {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  position: fixed;
+  bottom: 0;
+}
+.middleInfo{
+    display:flex;
+    flex-direction:row;
+}
