@@ -11,6 +11,7 @@ function SingleTicketPage() {
   const [subject, setSubject] = useState([]);
   const [severity, setSeverity] = useState([]);
   const [description, setDescription] = useState([]);
+  const [id, setId] = useState([]);
   useEffect(() => {
     const getTicket = async () => {
       const res = await axios.get(`http://localhost:3000/tickets/${path}`);
@@ -18,16 +19,36 @@ function SingleTicketPage() {
       setSubject(res.data.subject);
       setSeverity(res.data.severity);
       setDescription(res.data.description);
+      setId(res.data._id);
     };
     getTicket();
   }, [path]);
+  const handleDelete = async () => {
+    try {
+      await axios.delete(`http://localhost:3000/tickets/${id}`);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <>
-      <h1>{department}</h1>
-      <h1>{subject}</h1>
-      <h1>{severity}</h1>
-      <h1>{description}</h1>
-
+      <div className="infoContainer">
+        <div className="infoHeader">
+          <h1>
+            Ticket (#{id}) {subject}
+          </h1>
+        </div>
+        <div className="middleInfo">
+          Department: {department}
+          Severity: {severity}
+        </div>
+        DESCRIPTION: {description}
+        <div className="ticket-buttons">
+          <button>Edit</button>
+          <button onClick={handleDelete}>Delete</button>
+        </div>
+      </div>
       <SideBar />
     </>
   );
